@@ -48,11 +48,7 @@ def filledOrders(order, k)
     arr =[]
     order.sort.each do |i|
     	sum_ar = sum_ar+i
-       #if(sum_ar<=k)
-       #  arr<<i 
-       #else
-        # return arr.length 
-       #end
+       
        (sum_ar<=k) ? arr<<i  : (return arr.length) 
     end
     return arr.length

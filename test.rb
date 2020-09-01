@@ -244,22 +244,13 @@ def climbingLeaderboard1(scores, alice)
 	result =[]
 
 	alice.each do |i|
-		# if(scores.include?i)
-		# 	result<<scores.index(i)+1
-		# elsif(i<last_r)
-		# 	result<<scores.index(last_r)+2
-		# elsif(i>first_r)
-		# 	result<<scores.index(first_r)+1
-		# else
-		# 	val =scores.select{|j|j<i}.first
-		# 	result<<scores.index(val)+1
-		# end
+		
    while scores && scores.last && scores.last <= i
-        #puts "scores.last: #{scores.last}"
+        
         scores.pop
 
     end
-#    p scores
+
     if scores 
         result<< scores.count + 1
     else
@@ -271,13 +262,6 @@ end
 s =[100,100,50,40,40,20,10]
 a =[5,25,50,120]
 #p climbingLeaderboard2(s,a)
-def extraLongFactorials(n)
-return 1 if n < 2
-
-  # Recursive call
-  n * extraLongFactorials(n-1)
-
-end
 
 def appendAndDelete(s, c, k)
 t = s.split('')
@@ -419,16 +403,6 @@ def increment_by_13(str)
  conc.join('')
 end
 
-# #p increment_by_13("")
-# result =[]
-# "wb bb".split(" ").each do |i|
-
-# ar =	i.split("").map{|j|	j.ord+13}
-	
-#       result<<ar.map{|k|if(k>122) then (96+(k-122)).chr else k.chr end}.join
-
-# end
-# p result.join(" ")
 
 def find_target(root, k)
 	len = root.length 
