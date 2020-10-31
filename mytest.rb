@@ -144,3 +144,11 @@ return h.sort_by{|k,_|k}.max[1]
 end
 end
 #p longest_palindrome("ab")
+
+
+
+def mytestdemp
+p "fdhf"
+end
+
+p mytestdemp
